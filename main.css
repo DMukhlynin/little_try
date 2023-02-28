@@ -1,0 +1,64 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	height: 800px;
+}
+
+.air {
+	height: 400px;
+	width: 1000px;
+}
+
+.water {
+	height: 400px;
+	width: 1000px;
+}
+.textAir {
+	position: absolute;
+	left: 830px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #ff0a14;
+}
+
+.textWater {
+	position: absolute;
+	left: 875px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #ff0a14;
+}
+
+.axies {
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	width: 2px;
+	height: 700px;
+	background-color: black;
+}
+
+.beam {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.airBeam {
+	stroke-dasharray: 15;
+	animation: dash 100s infinite reverse;
+	animation-timing-function: linear;
+}
+
+.waterBeam {
+	stroke-dasharray: 15;
+	animation: dash 100s infinite reverse;
+	animation-timing-function: linear;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 2000;
+	}
+}
